@@ -1,6 +1,18 @@
 name: Forskningsutfall
 description: Registrer et forskningsutfall i innsiktsdatabasen
 title: "[Utfall]: "
+label: "[Sample size/]:"
+  - type: dropdown
+    attributes:
+      label: Antall brukere
+      description: Hvor mange brukere var involvert i studien?
+      multiple: true
+      options:
+        - 10-20
+        - 20-40
+    validations:
+      required: true
+      
 body:
   - type: markdown
     attributes:
