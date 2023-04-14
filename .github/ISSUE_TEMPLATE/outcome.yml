@@ -1,6 +1,6 @@
-name: Innsikt
-description: Registrer innsikt i innsiktsdatabasen
-title: "[Innsikt]: "
+name: Forskningsutfall
+description: Registrer et forskningsutfall i innsiktsdatabasen
+title: "[Utfall]: "
 body:
   - type: markdown
     attributes:
