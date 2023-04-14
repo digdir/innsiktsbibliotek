@@ -14,7 +14,7 @@ body:
       description: Beskriv funnet
       placeholder: F.eks, Uforventede pop-ups kan skape usikkerhet og flere forveksler de med reklame, annonser eller svindel.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: where
@@ -23,7 +23,7 @@ body:
       description: Skriv ned hvor funnet fant sted
       placeholder: F.eks, På hjemsiden til Altinn.no
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: who
@@ -32,7 +32,7 @@ body:
       description: Hvem kommer funnet fra eller hva er kilden til funnet?
       placeholder: F.eks, ikke-digitale og eldre med lav digital kompetanse
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: examples
@@ -41,7 +41,7 @@ body:
       description: Bruk eksempler for å forklare funnet ytterligere
       placeholder: F.eks, vedlagt bilde viser ulike typer pop-ups som ofte forveksles
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: relevant-research
@@ -50,7 +50,7 @@ body:
       description: Link til studien funnet stammer ifra
       placeholder: F.eks, et Github issue, en rapport eller andre typer artefakter
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: relevant-insight
@@ -59,16 +59,38 @@ body:
       description: Link til innsikt der funnet brukes
       placeholder: F.eks, et Github issue med tittel som starter med [Innsikt]
     validations:
-      required: true
+      required: false
   
+  - type: dropdown
+    id: media-format
+    attributes:
+      label: Media format
+      description: Hvilket format har studien du linker til?
+      options:
+        - Ikke publisert
+        - Rapport (nettbasert)
+        - Rapport (PDF)
+        - Rapport (Presentasjon)
+        - Github issue
+        - Dokumentasjon (nettbasert)
+        - Annen type artefakt
+    validations:
+      required: true
 
   - type: dropdown
-    id: version
+    id: available-languages
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Tilgjengelig på språk
+      description: Hvilke språk er studien tilgjengelig på? (du kan velge flere)
+      multiple: true
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - Deutsch / Tysk
+        - English / Engelsk
+        - Español / Spansk
+        - François / Fransk
+        - Norsk (bokmål)
+        - Norsk (nynorsk)
+        - Sámi / Samisk
+        - Tigrinya / Tigrinya
     validations:
       required: true
