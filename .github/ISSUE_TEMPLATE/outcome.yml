@@ -15,8 +15,8 @@ body:
       description: Sett dato for publisering i tittelen med kvartal etterfulgt av årstall (Q3-2021).
       options:
         - label: Jeg har satt dato i tittelen
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     id: description
