@@ -8,13 +8,13 @@ body:
       value: |
         Takk for at du bidrar til økt kunnskapsdeling på tvers av det offentlig!
 
-- type: checkboxes
-  id: date
-  attributes:
-    label: Når ble studien ferdigstilt?
-    description: Sett dato for publisering i tittelen med kvartal etterfulgt av årstall (Q3-2021).
-    options:
-      - label: Jeg har satt dato i tittelen
+  - type: checkboxes
+    id: date
+    attributes:
+      label: Når ble studien ferdigstilt?
+      description: Sett dato for publisering i tittelen med kvartal etterfulgt av årstall (Q3-2021).
+      options:
+        - label: Jeg har satt dato i tittelen
 
   - type: textarea
     id: description
