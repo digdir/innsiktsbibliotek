@@ -1,7 +1,7 @@
 name: Forskningsutfall
 description: Registrer et forskningsutfall i innsiktsdatabasen
 title: "[Qx/202x]: "
-labels: ["Type / utfall"]
+labels: ["Type / utfall ✨"]
 body:
   - type: markdown
     attributes:

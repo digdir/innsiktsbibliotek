@@ -1,7 +1,7 @@
 name: Innsikt
 description: Registrer ny innsikt i innsiktsdatabasen
 title: ""
-labels: ["Type / innsikt"]
+labels: ["Type / innsikt ✨"]
 body:
   - type: markdown
     attributes:
