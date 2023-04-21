@@ -1,6 +1,6 @@
 name: Innsikt
-description: Registrer innsikt i innsiktsdatabasen
-title: "[Innsikt]: "
+description: Registrer ny innsikt i innsiktsdatabasen
+title: ""
 labels: ["Type / innsikt"]
 body:
   - type: markdown
@@ -23,8 +23,9 @@ body:
       label: Hva slags innsikt er det
       description: Er det informativ eller handlingsrettet innsikt?
       options:
-        - Informative
-        - Actionable
+        - Informativ
+        - Handlingsrettet
+        - Usikker
     validations:
       required: true
 

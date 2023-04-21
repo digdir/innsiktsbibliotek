@@ -1,6 +1,6 @@
 name: Funn
-description: Registrer ett funn i innsiktsdatabasen
-title: "[Funn]: "
+description: Registrer ett nytt funn i innsiktsdatabasen
+title: ""
 labels: ["Type / funn"]
 body:
   - type: markdown
@@ -23,8 +23,9 @@ body:
       label: Hva slags funn er det
       description: Er det et informativt eller handlingsrettet funn?
       options:
-        - Informative
-        - Actionable
+        - Informativ
+        - Handlingsrettet
+        - Usikker
     validations:
       required: true
 

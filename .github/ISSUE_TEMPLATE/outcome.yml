@@ -15,6 +15,8 @@ body:
       description: Sett dato for publisering i tittelen med kvartal etterfulgt av årstall (Q3-2021).
       options:
         - label: Jeg har satt dato i tittelen
+    validations:
+      required: true
 
   - type: textarea
     id: description
@@ -23,7 +25,7 @@ body:
       description: Gi en kort beskrivelse av hva studien gikk ut på
       placeholder: F.eks, ...
     validations:
-      required: false
+      required: true
   
   - type: dropdown
     id: media-format
@@ -80,16 +82,16 @@ body:
       description: Fyll inn nøkkelord for studien med små bokstaver og separert med komma
       placeholder: F.eks, pensjon, velferd, nav
     validations:
-      required: false
+      required: true
 
   - type: input
     id: owner
     attributes:
       label: Hvem eier studien
       description: Skriv navnet på organisasjonen(e) som eier resultatet fra studien
-      placeholder: F.eks, NAV, Skatteetaten, Digitaliseringsdirektoratet, Brønnøysundsregistrene
+      placeholder: F.eks, NAV, Skatteetaten, Digitaliseringsdirektoratet
     validations:
-      required: false
+      required: true
 
   - type: dropdown
     id: available-languages
