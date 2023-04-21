@@ -28,7 +28,7 @@ body:
     validations:
       required: true
 
-  - type: markdown
+  - type: textarea
     id: relevant-findings
     attributes:
       label: Hvilke funn er innsikten bygget på?
@@ -37,7 +37,8 @@ body:
       value: |
         Denne innsikten er bygget på:
         - #1 
-        - #2 
+        - #2
+      render: bash
     validations:
       required: true
 
