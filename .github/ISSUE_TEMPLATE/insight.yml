@@ -1,6 +1,7 @@
 name: Innsikt
 description: Registrer innsikt i innsiktsdatabasen
 title: "[Innsikt]: "
+labels: ["Type / innsikt"]
 body:
   - type: markdown
     attributes:
