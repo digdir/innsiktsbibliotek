@@ -1,6 +1,6 @@
 name: Funn
 description: Registrer ett nytt funn i innsiktsdatabasen
-title: ""
+title: " "
 labels: ["Type / funn ✨"]
 body:
   - type: markdown
