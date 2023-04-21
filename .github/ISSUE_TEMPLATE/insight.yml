@@ -35,9 +35,9 @@ body:
       description: Link til funnene innsikten bygger på
       placeholder: F.eks, github issue
       value: |
-      Denne innsikten er bygget på:
+      "Denne innsikten er bygget på:
       - #1
-      - #2
+      - #2"
     validations:
       required: true
 
