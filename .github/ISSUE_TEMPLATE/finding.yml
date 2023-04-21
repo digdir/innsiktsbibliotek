@@ -8,18 +8,29 @@ body:
         Takk for at du bidrar til økt kunnskapsdeling på tvers av det offentlig!
 
   - type: textarea
-    id: what
+    id: description
     attributes:
-      label: Hva
-      description: Beskriv funnet
+      label: Beskriv funnet
+      description:  Gi en kort beskrivelse av funnet
       placeholder: F.eks, Uforventede pop-ups kan skape usikkerhet og flere forveksler de med reklame, annonser eller svindel.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type-funn
+    attributes:
+      label: Hva slags funn er det
+      description: Er det et informativt eller handlingsrettet funn?
+      options:
+        - Informative
+        - Actionable
     validations:
       required: true
 
   - type: textarea
     id: where
     attributes:
-      label: Hvor
+      label: Hvor oppstod funnet
       description: Skriv ned hvor funnet fant sted
       placeholder: F.eks, På hjemsiden til Altinn.no
     validations:
@@ -28,8 +39,8 @@ body:
   - type: textarea
     id: who
     attributes:
-      label: Hvem
-      description: Hvem kommer funnet fra eller hva er kilden til funnet?
+      label: Hvem kommer funnet fra
+      description: Hvem/hvilken gruppe er kilden til funnet?
       placeholder: F.eks, ikke-digitale og eldre med lav digital kompetanse
     validations:
       required: true
@@ -58,17 +69,5 @@ body:
       label: Relevant innsikt
       description: Link til innsikt der funnet brukes
       placeholder: F.eks, et Github issue med tittel som starter med [Innsikt]
-    validations:
-      required: true
-  
-
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
     validations:
       required: true

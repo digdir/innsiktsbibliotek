@@ -8,67 +8,39 @@ body:
         Takk for at du bidrar til økt kunnskapsdeling på tvers av det offentlig!
 
   - type: textarea
-    id: what
+    id: description
     attributes:
-      label: Hva
-      description: Beskriv funnet
+      label: Beskriv innsikten
+      description: Gi en kort beskrivelse av innsikten
       placeholder: F.eks, Uforventede pop-ups kan skape usikkerhet og flere forveksler de med reklame, annonser eller svindel.
     validations:
       required: true
 
-  - type: textarea
-    id: where
-    attributes:
-      label: Hvor
-      description: Skriv ned hvor funnet fant sted
-      placeholder: F.eks, På hjemsiden til Altinn.no
-    validations:
-      required: true
-
-  - type: textarea
-    id: who
-    attributes:
-      label: Hvem
-      description: Hvem kommer funnet fra eller hva er kilden til funnet?
-      placeholder: F.eks, ikke-digitale og eldre med lav digital kompetanse
-    validations:
-      required: true
-
-  - type: textarea
-    id: examples
-    attributes:
-      label: Eksempler
-      description: Bruk eksempler for å forklare funnet ytterligere
-      placeholder: F.eks, vedlagt bilde viser ulike typer pop-ups som ofte forveksles
-    validations:
-      required: true
-
-  - type: textarea
-    id: relevant-research
-    attributes:
-      label: Relevant forskning
-      description: Link til studien funnet stammer ifra
-      placeholder: F.eks, et Github issue, en rapport eller andre typer artefakter
-    validations:
-      required: true
-
-  - type: textarea
-    id: relevant-insight
-    attributes:
-      label: Relevant innsikt
-      description: Link til innsikt der funnet brukes
-      placeholder: F.eks, et Github issue med tittel som starter med [Innsikt]
-    validations:
-      required: true
-  
-
   - type: dropdown
-    id: version
+    id: type-innsikt
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Hva slags innsikt er det
+      description: Er det informativ eller handlingsrettet innsikt?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - Informative
+        - Actionable
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevant-findings
+    attributes:
+      label: Hvilke funn er innsikten bygget på?
+      description: Link til funnene innsikten bygger på
+      placeholder: F.eks, github issue
+    validations:
+      required: true
+
+  - type: textarea
+    id: recommendations
+    attributes:
+      label: Anbefalinger / Muligheter
+      description: Hvilke muligheter gir innsikten og hva anbefaler du
+      placeholder: F.eks, en kort tekst om muligheter fra innsikten samt en liste med anbefalinger
     validations:
       required: true

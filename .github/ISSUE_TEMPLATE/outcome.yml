@@ -1,63 +1,27 @@
 name: Forskningsutfall
 description: Registrer et forskningsutfall i innsiktsdatabasen
-title: "[Utfall]: "
+title: "[Qx/202x]: "
+labels: ["Type / utfall"]
 body:
   - type: markdown
     attributes:
       value: |
         Takk for at du bidrar til økt kunnskapsdeling på tvers av det offentlig!
 
-  - type: textarea
-    id: what
-    attributes:
-      label: Hva
-      description: Beskriv funnet
-      placeholder: F.eks, Uforventede pop-ups kan skape usikkerhet og flere forveksler de med reklame, annonser eller svindel.
-    validations:
-      required: false
+- type: checkboxes
+  id: date
+  attributes:
+    label: Når ble studien ferdigstilt?
+    description: Sett dato for publisering i tittelen med kvartal etterfulgt av årstall (Q3-2021).
+    options:
+      - label: Jeg har satt dato i tittelen
 
   - type: textarea
-    id: where
+    id: description
     attributes:
-      label: Hvor
-      description: Skriv ned hvor funnet fant sted
-      placeholder: F.eks, På hjemsiden til Altinn.no
-    validations:
-      required: false
-
-  - type: textarea
-    id: who
-    attributes:
-      label: Hvem
-      description: Hvem kommer funnet fra eller hva er kilden til funnet?
-      placeholder: F.eks, ikke-digitale og eldre med lav digital kompetanse
-    validations:
-      required: false
-
-  - type: textarea
-    id: examples
-    attributes:
-      label: Eksempler
-      description: Bruk eksempler for å forklare funnet ytterligere
-      placeholder: F.eks, vedlagt bilde viser ulike typer pop-ups som ofte forveksles
-    validations:
-      required: false
-
-  - type: textarea
-    id: relevant-research
-    attributes:
-      label: Relevant forskning
-      description: Link til studien funnet stammer ifra
-      placeholder: F.eks, et Github issue, en rapport eller andre typer artefakter
-    validations:
-      required: false
-
-  - type: textarea
-    id: relevant-insight
-    attributes:
-      label: Relevant innsikt
-      description: Link til innsikt der funnet brukes
-      placeholder: F.eks, et Github issue med tittel som starter med [Innsikt]
+      label: Beskriv studien
+      description: Gi en kort beskrivelse av hva studien gikk ut på
+      placeholder: F.eks, ...
     validations:
       required: false
   
@@ -78,19 +42,74 @@ body:
       required: true
 
   - type: dropdown
+    id: research-methods
+    attributes:
+      label: Forskningsmetoder
+      description: Hvilke forskningsmetoder ble brukt i studien?
+      multiple: true
+      options:
+        - Archival research
+        - Conceptual test
+        - Probe (cultural / technical)
+        - Ethnography
+        - Focus group
+        - Literature review
+        - Observation
+        - Service safari
+        - Survey
+        - Usability test
+        - Desk research
+        - Interview
+        - Annet
+    validations:
+      required: true
+
+  - type: textarea
+    id: sample-size
+    attributes:
+      label: Antall studiedeltagere
+      description: Skriv inn antall deltagere/brukere som tok del i studien
+      placeholder: F.eks, 20
+    validations:
+      required: true
+
+  - type: textarea
+    id: keywords
+    attributes:
+      label: Nøkkelord
+      description: Fyll inn nøkkelord for studien med små bokstaver og separert med komma
+      placeholder: F.eks, pensjon, velferd, nav
+    validations:
+      required: false
+
+  - type: textarea
+    id: owner
+    attributes:
+      label: Hvem eier studien
+      description: Skriv navnet på organisasjonen(e) som eier resultatet fra studien
+      placeholder: F.eks, NAV, Skatteetaten, Digitaliseringsdirektoratet, Brønnøysundsregistrene
+    validations:
+      required: false
+
+  - type: dropdown
     id: available-languages
     attributes:
       label: Tilgjengelig på språk
       description: Hvilke språk er studien tilgjengelig på? (du kan velge flere)
       multiple: true
       options:
-        - Deutsch / Tysk
         - English / Engelsk
-        - Español / Spansk
-        - François / Fransk
         - Norsk (bokmål)
         - Norsk (nynorsk)
         - Sámi / Samisk
-        - Tigrinya / Tigrinya
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Link til studien
+      description: Legg inn link (url) til studien
+      placeholder: F.eks, https://www.digdir.no/datadeling/innsynslosning-tekniske-og-juridiske-muligheter/3465
     validations:
       required: true
