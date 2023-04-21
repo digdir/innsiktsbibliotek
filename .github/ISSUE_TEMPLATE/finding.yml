@@ -61,6 +61,7 @@ body:
       label: Relevant forskning
       description: Link til studien funnet stammer ifra
       placeholder: F.eks, et Github issue, en rapport eller andre typer artefakter
+      value: Dette funnet kommer fra 🔬 studien #1
     validations:
       required: true
 
@@ -71,4 +72,4 @@ body:
       description: Link til innsikt der funnet brukes
       placeholder: F.eks, et Github issue med tittel som starter med [Innsikt]
     validations:
-      required: true
+      required: false
