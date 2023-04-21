@@ -64,7 +64,7 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: sample-size
     attributes:
       label: Antall studiedeltagere
@@ -82,7 +82,7 @@ body:
     validations:
       required: false
 
-  - type: textarea
+  - type: input
     id: owner
     attributes:
       label: Hvem eier studien
@@ -105,7 +105,7 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: source
     attributes:
       label: Link til studien
