@@ -34,7 +34,10 @@ body:
       label: Hvilke funn er innsikten bygget på?
       description: Link til funnene innsikten bygger på
       placeholder: F.eks, github issue
-      value: "Denne innsikten er bygget på: - #1 - #2"
+      value: |
+      Denne innsikten er bygget på:
+      - #1
+      - #2
     validations:
       required: true
 
