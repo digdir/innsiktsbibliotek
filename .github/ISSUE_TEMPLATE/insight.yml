@@ -36,8 +36,8 @@ body:
       placeholder: F.eks, github issue
       value: "
         Denne innsikten er bygget på:
-        - #1 
-        - #2
+        /n - #1 
+        /n - #2
         "
     validations:
       required: true
