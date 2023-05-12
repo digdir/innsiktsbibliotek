@@ -4,7 +4,7 @@
 #### Bidra til innsikt hub
 1. Trykk på `issues`
 2. Velg din issue type (`forsnkningsutfall`, `funn` eller `innsikt`)
-3. Fyll ut issue og relevant forsnkning/eller innsikt*
+3. Fyll ut issue og relevant forsknning/eller innsikt felt
 4. Send inn issue
 5. En admin vil sjekke og tag din issue
 
