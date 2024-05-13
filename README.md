@@ -6,7 +6,7 @@
 2. Velg din issue type (`forskningsutfall`, `funn` eller `innsikt`)
 3. Fyll ut issue og relevante forskning/eller innsikts felt
 4. Send inn issue
-5. En admin vil sjekke og tag din issue
+5. En admin vil sjekke og tagge din issue
 
 #### Tilgjengelige språk 
 - For å lese innsiktsbibliotek på språket du ønsker, bruk [dette Google Translate-nettstedet](https://github-com.translate.goog/digdir/insights-hub/issues?_x_tr_sl=no&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp)
